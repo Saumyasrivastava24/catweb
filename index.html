@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebPage</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+      .navbar {
+        background: rgba(128, 128, 128, 0.372);
+      }
+      .navul {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        height: 50px;
+      }
+      .anchornav {
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+      }
+      li {
+        list-style: none;
+        /* transition: 2s; */
+      }
+      .video {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        top: 0%;
+        z-index: -1;
+        right: 0%;
+        bottom: 0%;
+        left: 0%;
+      }
+      .anchornav:hover {
+        text-decoration: underline;
+        transition: 2s;
+      }
+      @media (max-width: 370px) {
+        .anchornav {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="parentcontainer">
+    <nav class="navbar">
+      <ul class="navul">
+        <li><a class="anchornav" href="#">Home</a></li>
+        <li><a class="anchornav" href="#">About Us</a></li>
+        <li><a class="anchornav" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <video class="video" src="./cat.mp4" autoplay loop muted></video>
+  </body>
+</html>
